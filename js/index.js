@@ -6,7 +6,7 @@ profit.css("background", `linear-gradient(94.78deg, #DF5950 0%, #451046 ${profit
 const taimer = () => {
     //let date = new Date(2022, 12, 31);
     //let now = new Date();
-    gap = 5000;
+    gap = 200000000;
     let day = Math.floor(gap / 1000 / 60 / 60 / 24);
     let hour = Math.floor((gap / 1000 / 60 / 60) % 24);
     let min = Math.floor((gap / 1000 / 60) % 60);
