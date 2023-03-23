@@ -3,10 +3,9 @@ const profit = $("#profit");
 profit.css("background", `linear-gradient(94.78deg, #DF5950 0%, #451046 ${profit.val()/10000}%, #fff ${profit.val()/10000}%, white 100%)`);
 
 // Taimer
+const date = Date.now() + 100000;
 const taimer = () => {
-    //let date = new Date(2022, 12, 31);
-    //let now = new Date();
-    gap = 200000000;
+    gap = date - Date.now();
     let day = Math.floor(gap / 1000 / 60 / 60 / 24);
     let hour = Math.floor((gap / 1000 / 60 / 60) % 24);
     let min = Math.floor((gap / 1000 / 60) % 60);
